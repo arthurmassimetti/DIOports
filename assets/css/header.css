@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.header .title {
+    font-family: 'Neue Machina';
+    text-align: center;
+    
+}
+.informations span{
+    margin: .5rem;
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.informations span {
+    margin: .5rem;
+}
+
+.informations span:before {
+    content: 'c';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(/assets/img/icons/person.svg);
+    background-image: url(/assets/img/icons/location.svg);
+    background-image: url(/assets/img/icons/phone.svg);
+    background-image: url(/assets/img/icons/email.svg);
+
+}
