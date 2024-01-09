@@ -10,10 +10,13 @@
     src:url('/css/fonts/neue-machina-regular.otf');
 }
 
-.body {
-    background-color: #000;
-    color: #fff
+body {
+    margin: 0; /* Remova as margens padrão do body */
+    overflow: hidden; /* Para garantir que não haja barras de rolagem */
+    background-size: cover;
+    background-color: #123556;
 }
+
 
 
 .main{
@@ -25,9 +28,8 @@
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
+    
 
-    
-    
 }
 
 .main::before{
