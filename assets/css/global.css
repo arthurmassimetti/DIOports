@@ -12,20 +12,19 @@
 
 body {
     margin: 0; /* Remova as margens padrão do body */
-    overflow: hidden; /* Para garantir que não haja barras de rolagem */
     background-size: cover;
-    background-color: #123556;
+    background-color: #E4DACC;
 }
 
 
 
 .main{
-    border: 1px solid #fff;
+    border: 5px solid #70675C;
     border-radius: 2%;
     padding: .3rem;
     margin: .10rem auto;
     width: flexible;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 20px;
     margin-right: 20px;
     
@@ -36,4 +35,20 @@ body {
     content: '';
     background-repeat: no-repeat;
     background-size: content;
+}
+
+@media only screen and (min-width: 768px){
+    .main{
+        max-width: 1024px;
+        margin: 40px auto;
+
+    }
+    
+    .main :after,
+    .main :before {
+        width: 70vw;
+    }
+
+
+    
 }
