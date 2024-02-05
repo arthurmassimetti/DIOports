@@ -5,8 +5,11 @@
     margin: 1rem 0;
     border: 4px solid #70675C;
     border-radius: 1rem;
+    transition: .25s;
     
 }
+
+
 
 .acordeon .trigger{
     font-size: 1.5rem;
@@ -18,11 +21,13 @@
     padding: 1rem 2rem;
     background-color: transparent;
     border: none;
+    background-size: contain;
 }
-
-.acordeon .hover{
-    background-color: blueviolet;
-    border-color: blueviolet;
+.acordeon.open,
+.acordeon:hover{
+    background-color: #7C6A55;
+    border-color: #7C6A55;
+    
 }
 
 .acoderon .trigger:hover{
@@ -35,10 +40,13 @@
     width: 2rem;
     height: 2rem;
     background-repeat: no-repeat;
-    background-size: ;
-    background-image: ;
 }
 
 .acordeon .content{
     display: none;
 }
+
+.acordeon.open .trigger::after{
+    transform: rotate(260deg);
+}
+  
