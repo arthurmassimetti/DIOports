@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+    color: #F4FFFF;
     
 }
 
@@ -13,13 +14,13 @@
 body {
     margin: 0; /* Remova as margens padrão do body */
     background-size: cover;
-    background-color: #E4DACC;
+    background-color: #061A28;
 }
 
 
 
 .main{
-    border: 5px solid #70675C;
+    border: 5px solid #F4FFFF;
     border-radius: 2%;
     padding: .3rem;
     margin: .10rem auto;

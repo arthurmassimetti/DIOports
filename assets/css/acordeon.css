@@ -3,15 +3,12 @@
     flex-direction: column;
     width: 100%;
     margin: 1rem 0;
-    border: 4px solid #70675C;
+    border: 4px solid #F4FFFF;
     border-radius: 1rem;
     transition: .25s;
-    
 }
 
-
-
-.acordeon .trigger{
+.acordeon .trigger {
     font-size: 1.5rem;
     display: flex;
     flex-direction: row;
@@ -22,19 +19,21 @@
     background-color: transparent;
     border: none;
     background-size: contain;
+    cursor: pointer; /* Adicionado para definir o cursor como pointer */
+    color: #2EB3F0;
 }
+
 .acordeon.open,
-.acordeon:hover{
-    background-color: #7C6A55;
-    border-color: #7C6A55;
-    
+.acordeon:hover {
+    background-color: #061A28;
+    border-color: #00AAF1;
 }
 
-.acoderon .trigger:hover{
-    cursor:pointer;
+.acordeon .trigger:hover {
+    cursor: pointer;
 }
 
-.acordeon .title::after{
+.acordeon .title::after {
     content: '';
     display: inline-block;
     width: 2rem;
@@ -42,11 +41,19 @@
     background-repeat: no-repeat;
 }
 
-.acordeon .content{
+.acordeon .content {
     display: none;
 }
 
-.acordeon.open .trigger::after{
+.acordeon.open .trigger::after {
     transform: rotate(260deg);
 }
-  
+
+/* Regras para mostrar o conteúdo ao clicar no botão */
+.trigger:focus + .content{
+    display: block;
+}
+
+.trigger-checkbox:checked ~ .content {
+    display: none;
+}
