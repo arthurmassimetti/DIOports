@@ -23,10 +23,15 @@
     color: #2EB3F0;
 }
 
+.color{
+    color: #000;
+
+}
 .acordeon.open,
 .acordeon:hover {
-    background-color: #061A28;
+    background-color: #00AAF1;
     border-color: #00AAF1;
+    color: black;
 }
 
 .acordeon .trigger:hover {
@@ -47,6 +52,7 @@
 
 .acordeon.open .trigger::after {
     transform: rotate(260deg);
+    
 }
 
 /* Regras para mostrar o conteúdo ao clicar no botão */
