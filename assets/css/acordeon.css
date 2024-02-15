@@ -27,12 +27,19 @@
     color: #000;
 
 }
+
 .acordeon.open,
 .acordeon:hover {
     background-color: #00AAF1;
     border-color: #00AAF1;
-    color: black;
+    color: black; /* Mudar a cor do texto quando o acordeão está aberto ou quando o mouse está sobre ele */
 }
+
+.acordeon.open .trigger,
+.acordeon:hover .trigger {
+    color: black; /* Mudar a cor do texto do botão quando o acordeão está aberto ou quando o mouse está sobre ele */
+}
+
 
 .acordeon .trigger:hover {
     cursor: pointer;
